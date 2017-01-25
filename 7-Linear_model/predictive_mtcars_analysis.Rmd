@@ -1,0 +1,59 @@
+---
+title: "Quantifying the influence of motor vehicle transmission's type on fuel consumption"
+author: "M. Gazeau"
+date: "January 23, 2017"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Synopsis
+
+
+Looking at a data set **mtcars** of a collection of cars, we are interested in exploring the relationship between the distance travelled per unit volume of fuel used (measured in miles per gallon (mpg)) and other variables. We are particularly interested in the influence of the type of motor vehicle transmission:
+ * Is an automatic or manual transmission better for MPG?
+ * Quantify the MPG difference between automatic and manual transmissions
+ 
+## The dataset mtcars
+We first load the dataset **mtcars** in the **datasets** package.
+According to the documentation, this dataset contains informations on the fuel consumption (mpg) and 10 caracteristics of 32 vehicules. 
+We explore the dataset to find out the names and types of the 10 variables. We observe that the dataset does not contain missing values. We split the dataset between continuous and discrete variables.
+
+```{r,  warning=FALSE}
+library(corrplot)
+library(Hmisc)
+library(gridExtra)
+library(dplyr)
+library(ggplot2)
+library(VGAM)
+library(caret)
+
+cars <- tbl_df(mtcars) 
+
+summary(cars)
+describe(cars)
+
+# Split continuous and discrete variables
+x <- cars %>% dplyr::select(mpg, disp, hp, drat, wt, qsec)
+y <- cars %>% dplyr::select(cyl, vs, am, gear, carb) %>%
+        mutate_all(funs(as.factor))
+```
+
+
+
+ 
+## Exploratory data analysis
+
+```{r}
+# Correlation plot to detect collinearity
+corrplot(cor(cars), method="color", type="lower", addCoef.col = "black")
+```
+
+
+
+## Predicting miles/gallon (mpg)
+
+## Conclusion
