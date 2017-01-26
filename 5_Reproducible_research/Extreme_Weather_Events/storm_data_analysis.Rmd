@@ -1,6 +1,9 @@
 ---
 title: "Extreme weather events in U.S. and their health and economic consequences"
-output: pdf_document
+output:
+  pdf_document: default
+  keep_md: yes
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
