@@ -1,4 +1,4 @@
-#CodeBook
+#CodeBook: Accelerometers_Samsung_GalaxyS
 
 This code book describes the processing required to create the resulting tidy data set
 as well as the variables in this data set.

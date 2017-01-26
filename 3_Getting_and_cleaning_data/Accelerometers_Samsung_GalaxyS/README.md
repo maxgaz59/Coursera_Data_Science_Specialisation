@@ -1,12 +1,12 @@
-#README: programmation assignment 4
+#README: Accelerometers_Samsung_GalaxyS
 
 ## The project
 
 This project contains:
 
- * a tidy data set stored in *'allDataTidy_mean.txt'*
- * a script *'run_analysis.R'* for performing the analysis
- * a code book that describes the variables, the data, and any transformations or work            that I performed to clean up the data called *'CodeBook.md'*
+ * a tidy data set stored in **allDataTidy_mean.txt**
+ * a script **run_analysis.R** for performing the analysis
+ * a code book that describes the variables, the data, and any transformations or work that I performed to clean up the data called **CodeBook.md**
 
 
 ## The data set
@@ -24,7 +24,7 @@ The data set contains the following files
 
 * features.txt : List of all 561 features. Names of variables
 * activity_labels.txt : Labels and activity names.
-* subject_test.txt / subject_train.txt: Each row identifies the subject who                                               performed the activity for each window sample.
+* subject_test.txt / subject_train.txt: Each row identifies the subject who performed the activity for each window sample.
 * x_test.txt : Test set.
 * y_test.txt : Activity labels for the 'test' set.
 * x_train.txt : Training set.
