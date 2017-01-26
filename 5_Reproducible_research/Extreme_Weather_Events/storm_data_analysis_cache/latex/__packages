@@ -1,0 +1,12 @@
+base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
+knitr
+xml2
+rvest
+dplyr
+ggplot2
