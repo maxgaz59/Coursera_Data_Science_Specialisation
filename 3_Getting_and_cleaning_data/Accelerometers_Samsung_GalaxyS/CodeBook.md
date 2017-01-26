@@ -14,7 +14,7 @@ Here are the steps performed by the R-script (run_analysis.R):
   6.  Set descriptive activity names
   7.  Clean variable names, select only mean and standard deviation for each              measurement and create one single tidy data set.
   8.   Compute the average of each variable for each activity and each subject.
-  9. Store the data frame in the file *'allDataTidy_mean.txt'*.
+  9. Store the data frame in the file **allDataTidy_mean.txt**.
  
  
 ## The variables

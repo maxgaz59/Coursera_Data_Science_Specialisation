@@ -40,5 +40,5 @@ This script requires the following packages
 * library(dplyr)
 * library(lazyeval)
 
-The output is stored in *'allDataTidy_mean.txt'* in the UCI HAR Dataset repository in your working directory.
+The output is stored in **allDataTidy_mean.txt** in the UCI HAR Dataset repository in your working directory.
 You can read more about the script and the variables in the code book.
